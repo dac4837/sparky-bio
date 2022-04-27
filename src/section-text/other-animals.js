@@ -1,0 +1,8 @@
+const OtherAnimals = {
+    "value": `Sparky does well with dogs who he’s friends with but can get frazzled when spotting other dogs on the street. He’s good with small and calm dogs across the street but gets riled up when confronting dogs larger than him or when other dogs are paying him attention. Luckily his size makes this easy to manage on walks. Introducing him to a new friend may take some time as he will want to assert himself but is always eager to see his previous acquaintances.
+    Sparky does have some experience with cats although it would likely be better if the cat has experience with dogs or no cats. He’s mostly curious but will be riled up and will chase if instigated.`,
+    "label": "other-animals",
+    "displayName": "Other Animals"
+}
+
+export default OtherAnimals
