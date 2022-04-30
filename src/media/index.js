@@ -19,6 +19,9 @@ export const SparkySanta = {
 
 export const AllImages = [
     {
+        original: require("./sparky-hammock.jpg"),
+        thumbnail: require("./sparky-hammock-thumbnail.jpg")
+    },{
         original: require("./sparky-airport.jpg"),
         thumbnail: require("./sparky-airport-thumbnail.jpg")
     },{
@@ -30,9 +33,6 @@ export const AllImages = [
     },{
         original: require("./sparky-fluff.jpg"),
         thumbnail: require("./sparky-fluff-thumbnail.jpg")
-    },{
-        original: require("./sparky-hammock.jpg"),
-        thumbnail: require("./sparky-hammock-thumbnail.jpg")
     },{
         original: require("./sparky-lap.jpg"),
         thumbnail: require("./sparky-lap-thumbnail.jpg")

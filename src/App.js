@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import Section from './components/section'
 
 import {Intro, StrangerDanger, OtherAnimals, SpecialCare, Health, TricksForTreats, Conclusion} from './section-text'
@@ -6,8 +6,17 @@ import { SparkyLion, SparkyCouch, SparkyLap, SparkySanta, AllImages } from './me
 import ImageGallery from 'react-image-gallery'
 
 function Body()  {
-
   const imageGalleryRef = useRef(null)
+  const [thumbnailClicked, setThumbnailClicked ] = useState(false)
+
+  useEffect(() => {
+    if(thumbnailClicked) {
+      imageGalleryRef.current.scrollIntoView({alignToTop:true})
+      setThumbnailClicked(false)
+    }
+  },[thumbnailClicked])
+
+
   const scrollToImageGallery = () => {
     imageGalleryRef.current.scrollIntoView({alignToTop:true})
   }
@@ -25,7 +34,7 @@ function Body()  {
 
       
     <div className="row mt-9" ref={imageGalleryRef}>
-    <ImageGallery items={AllImages} thumbnailPosition={'top'} onThumbnailClick={scrollToImageGallery} />
+    <ImageGallery items={AllImages} thumbnailPosition={'top'} onThumbnailClick={() => {setThumbnailClicked(true)}} />
     </div>
   </div>
   )
