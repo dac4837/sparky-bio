@@ -3,14 +3,14 @@ function Section(props) {
     let image
     if(props.image) {
         image = (
-            <div className="col">
+            <div className="col col-12 col-md-3">
                 <img src={props.image.thumbnail} alt={props.label} className="img-fluid" />
             </div>
         )
     }
 
     const text = (
-        <div className={props.image ? "col col-md-9" : "col"}>
+        <div className={props.image ? "col mt-3 col-12 col-md-9" : "col mt-3"}>
             <div className={props.imageDisplay === 'left' ? "row justify-content-end" : "row"}>
                 <div className="col col-md-auto">
                     <h1>{props.displayName}</h1>
