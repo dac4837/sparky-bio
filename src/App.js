@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Section from './components/section'
 
 import {Intro, StrangerDanger, OtherAnimals, SpecialCare, Health, TricksForTreats, Conclusion} from './section-text'
@@ -6,6 +6,11 @@ import { SparkyLion, SparkyCouch, SparkyLap, SparkySanta, AllImages } from './me
 import ImageGallery from 'react-image-gallery'
 
 function Body()  {
+
+  const imageGalleryRef = useRef(null)
+  const scrollToImageGallery = () => {
+    imageGalleryRef.current.scrollIntoView({alignToTop:true})
+  }
 
   return (
     <div className="container">
@@ -19,8 +24,8 @@ function Body()  {
       <Section {...Conclusion} />
 
       
-    <div className="row mt-9">
-    <ImageGallery items={AllImages} thumbnailPosition={'top'} />
+    <div className="row mt-9" ref={imageGalleryRef}>
+    <ImageGallery items={AllImages} thumbnailPosition={'top'} onThumbnailClick={scrollToImageGallery} />
     </div>
   </div>
   )
