@@ -2,12 +2,10 @@ import React from 'react'
 import Section from './components/section'
 
 import {Intro, StrangerDanger, OtherAnimals, SpecialCare, Health, TricksForTreats, Conclusion} from './section-text'
-import { SparkyLion, SparkyCouch, SparkyLap, SparkySanta } from './media'
+import { SparkyLion, SparkyCouch, SparkyLap, SparkySanta, AllImages } from './media'
 import ImageGallery from 'react-image-gallery'
 
 function Body()  {
-
-const images = [{...SparkyLion}, {...SparkyCouch}, {...SparkyLap}, {...SparkySanta}]
 
   return (
     <div className="container">
@@ -22,7 +20,7 @@ const images = [{...SparkyLion}, {...SparkyCouch}, {...SparkyLap}, {...SparkySan
 
       
     <div className="row mt-9">
-    <ImageGallery items={images} thumbnailPosition={'top'} />
+    <ImageGallery items={AllImages} thumbnailPosition={'top'} />
     </div>
   </div>
   )
