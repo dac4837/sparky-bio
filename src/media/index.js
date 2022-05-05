@@ -19,8 +19,41 @@ export const SparkySanta = {
 
 export const AllImages = [
     {
-        original: require("./sparky-hammock.jpg"),
-        thumbnail: require("./sparky-hammock-thumbnail.jpg")
+        original: require("./1680654891.jpg"),
+        thumbnail: require("./1680654891-thumbnail.jpg")
+    },{
+        original: require("./335224054.jpg"),
+        thumbnail: require("./335224054-thumbnail.jpg")
+    },{
+        original: require("./615157723.jpg"),
+        thumbnail: require("./615157723-thumbnail.jpg")
+    },{
+        original: require("./700236844.jpg"),
+        thumbnail: require("./700236844-thumbnail.jpg")
+    },{
+        original: require("./920980547.jpg"),
+        thumbnail: require("./920980547-thumbnail.jpg")
+    },{
+        original: require("./COLLAGE.jpg"),
+        thumbnail: require("./COLLAGE_thumbnail.jpg")
+    },{
+        original: require("./IMG_1226.jpg"),
+        thumbnail: require("./IMG_1226_thumbnail.jpg")
+    },{
+        original: require("./IMG_1275.jpg"),
+        thumbnail: require("./IMG_1275_thumbnail.jpg")
+    },{
+        original: require("./IMG_20170219_210613738.jpg"),
+        thumbnail: require("./IMG_20170219_210613738_thumbnail.jpg")
+    },{
+        original: require("./IMG_20170318_102247752.jpg"),
+        thumbnail: require("./IMG_20170318_102247752_thumbnail.jpg")
+    },{
+        original: require("./IMG_20180818_084440385_HDR.jpg"),
+        thumbnail: require("./IMG_20180818_084440385_HDR_thumbnail.jpg")
+    },{
+        original: require("./IMG_2720.jpg"),
+        thumbnail: require("./IMG_2720_thumbnail.jpg")
     },{
         original: require("./sparky-airport.jpg"),
         thumbnail: require("./sparky-airport-thumbnail.jpg")
@@ -34,6 +67,9 @@ export const AllImages = [
         original: require("./sparky-fluff.jpg"),
         thumbnail: require("./sparky-fluff-thumbnail.jpg")
     },{
+        original: require("./sparky-hammock.jpg"),
+        thumbnail: require("./sparky-hammock-thumbnail.jpg")
+    },{
         original: require("./sparky-lap.jpg"),
         thumbnail: require("./sparky-lap-thumbnail.jpg")
     },{
@@ -45,4 +81,5 @@ export const AllImages = [
     },{
         original: require("./sparky-vest.jpg"),
         thumbnail: require("./sparky-vest-thumbnail.jpg")
-    }]
+    }    
+]
