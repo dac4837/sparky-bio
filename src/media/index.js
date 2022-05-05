@@ -19,8 +19,14 @@ export const SparkySanta = {
 
 export const AllImages = [
     {
+        original: require("./0sparky-hammock.jpg"),
+        thumbnail: require("./0sparky-hammock-thumbnail.jpg")
+    },{
         original: require("./1680654891.jpg"),
         thumbnail: require("./1680654891-thumbnail.jpg")
+    },{
+        original: require("./2022-04-24.jpeg"),
+        thumbnail: require("./2022-04-24_thumbnail.jpeg")
     },{
         original: require("./335224054.jpg"),
         thumbnail: require("./335224054-thumbnail.jpg")
@@ -30,12 +36,6 @@ export const AllImages = [
     },{
         original: require("./700236844.jpg"),
         thumbnail: require("./700236844-thumbnail.jpg")
-    },{
-        original: require("./920980547.jpg"),
-        thumbnail: require("./920980547-thumbnail.jpg")
-    },{
-        original: require("./COLLAGE.jpg"),
-        thumbnail: require("./COLLAGE_thumbnail.jpg")
     },{
         original: require("./IMG_1226.jpg"),
         thumbnail: require("./IMG_1226_thumbnail.jpg")
@@ -67,9 +67,6 @@ export const AllImages = [
         original: require("./sparky-fluff.jpg"),
         thumbnail: require("./sparky-fluff-thumbnail.jpg")
     },{
-        original: require("./sparky-hammock.jpg"),
-        thumbnail: require("./sparky-hammock-thumbnail.jpg")
-    },{
         original: require("./sparky-lap.jpg"),
         thumbnail: require("./sparky-lap-thumbnail.jpg")
     },{
@@ -81,5 +78,5 @@ export const AllImages = [
     },{
         original: require("./sparky-vest.jpg"),
         thumbnail: require("./sparky-vest-thumbnail.jpg")
-    }    
+    }
 ]
