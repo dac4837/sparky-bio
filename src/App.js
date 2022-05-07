@@ -1,9 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react'
+import { map } from 'lodash'
 import Section from './components/section'
 
 import {Intro, StrangerDanger, OtherAnimals, SpecialCare, Health, TricksForTreats, Conclusion} from './section-text'
 import { SparkyLion, SparkyCouch, SparkyLap, SparkySanta, AllImages } from './media'
 import ImageGallery from 'react-image-gallery'
+
 
 function Body()  {
   const imageGalleryRef = useRef(null)
@@ -46,7 +48,10 @@ function Body()  {
           </ul>
         </div>
       </nav>
-      
+
+      <div className="row mb-5 mt-5">
+        <InfoCard/>
+      </div>
       
       <Section {...Intro} image={SparkyLion} imageDisplay="left"/>
       <Section {...StrangerDanger}/>
@@ -57,14 +62,13 @@ function Body()  {
       <Section {...Conclusion} />
 
       
-      <div className="row mt-9" ref={contactRef}>
+      <div className="row mb-5" ref={contactRef}>
         <Contact />
       </div>
       
-      <div className="row mt-9" ref={imageGalleryRef}>
+      <div className="row mb-5 pb-5" ref={imageGalleryRef}>
         <ImageGallery items={AllImages} thumbnailPosition={'top'} onThumbnailClick={onPhotoClick} onSlide={onPhotoClick} />
       </div>
-
     
   </div>
   )
@@ -80,6 +84,35 @@ function Contact() {
     </div>
   )
   
+}
+
+function InfoCard() {
+  const infoDetails = 
+  [["Name: Sparky", "Age: 9yo coming 9/8/22", "Breed: Havanese", "Size: Small, 16lbs"],
+    ["Gender: Male", "Location: Maine", "Families: Not good with children", "Other dogs: Good with dogs he knows", "Cats: No"]]
+
+  const infoTable = map(infoDetails, (detailColumn, ColumnIndex) => {
+
+    const infoColumn = map(detailColumn, (detail, detailIndex) => {
+      return (<li key={detailIndex} className='list-group-item'>{detail}</li>)
+    })
+
+    return (
+      <div key={ColumnIndex} className="col">
+        <ul className='list-group list-group-flush'>{infoColumn}</ul>
+      </div>
+    )
+  })
+
+  return (
+    <div className='col'>
+      <h1>Info</h1>
+      <div className="row">
+        {infoTable}
+      </div>
+    </div>
+  )
+
 }
 
 function App() {

@@ -34,7 +34,7 @@ function Section(props) {
     }
 
     return(
-        <div className="row justify-content-md-center mt-3">
+        <div className="row justify-content-md-center mb-5">
             {content}
         </div>
     )
