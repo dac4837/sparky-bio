@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { map } from "lodash";
 import Section from "./components/section";
+import ImageGallery from "react-image-gallery";
 
 import {
   Intro,
@@ -12,13 +13,12 @@ import {
   Conclusion,
 } from "./section-text";
 import {
-  SparkyLion,
-  SparkyCouch,
-  SparkyLap,
-  SparkySanta,
-  AllImages,
+  sparkyCouch,
+  sparkyLap,
+  sparkySanta,
+  sparkySmile,
+  allImages,
 } from "./media";
-import ImageGallery from "react-image-gallery";
 
 function Body() {
   const imageGalleryRef = useRef(null);
@@ -29,7 +29,7 @@ function Body() {
     imageGalleryRef.current.scrollIntoView({ alignToTop: true });
   };
 
-  const onPhotoClick = () => {
+  const onPhotoClick = (event) => {
     setPhotoClicked(true);
   };
 
@@ -75,12 +75,12 @@ function Body() {
         <InfoCard />
       </div>
 
-      <Section {...Intro} image={SparkyLion} imageDisplay="left" />
+      <Section {...Intro} image={sparkySmile} imageDisplay="left" />
       <Section {...StrangerDanger} />
-      <Section {...OtherAnimals} image={SparkyCouch} imageDisplay="right" />
+      <Section {...OtherAnimals} image={sparkyCouch} imageDisplay="right" />
       <Section {...SpecialCare} />
-      <Section {...Health} image={SparkyLap} imageDisplay="left" />
-      <Section {...TricksForTreats} image={SparkySanta} imageDisplay="right" />
+      <Section {...Health} image={sparkyLap} imageDisplay="left" />
+      <Section {...TricksForTreats} image={sparkySanta} imageDisplay="right" />
       <Section {...Conclusion} />
 
       <div className="row mb-5" ref={contactRef}>
@@ -89,7 +89,7 @@ function Body() {
 
       <div className="row mb-5 pb-5" ref={imageGalleryRef}>
         <ImageGallery
-          items={AllImages}
+          items={allImages}
           thumbnailPosition={"top"}
           onThumbnailClick={onPhotoClick}
           onSlide={onPhotoClick}

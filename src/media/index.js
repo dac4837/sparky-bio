@@ -1,23 +1,31 @@
-export const SparkyLion = {
+const sparkyIcon = require("./sparky-icon.jpg");
+export default sparkyIcon;
+
+export const sparkyLion = {
   original: require("./sparky-lion.jpg"),
   thumbnail: require("./sparky-lion-thumbnail.jpg"),
 };
-export const SparkyCouch = {
+export const sparkyCouch = {
   original: require("./sparky-couch.jpg"),
   thumbnail: require("./sparky-couch-thumbnail.jpg"),
 };
 
-export const SparkyLap = {
+export const sparkyLap = {
   original: require("./sparky-lap.jpg"),
   thumbnail: require("./sparky-lap-thumbnail.jpg"),
 };
 
-export const SparkySanta = {
+export const sparkySanta = {
   original: require("./sparky-santa.jpg"),
   thumbnail: require("./sparky-santa-thumbnail.jpg"),
 };
 
-export const AllImages = [
+export const sparkySmile = {
+  original: require("./sparky-smile.jpg"),
+  thumbnail: require("./sparky-smile.jpg"),
+};
+
+export const allImages = [
   {
     original: require("./0sparky-hammock.jpg"),
     thumbnail: require("./0sparky-hammock-thumbnail.jpg"),
