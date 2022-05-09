@@ -4,9 +4,7 @@ Sparky does have a history of biting but it’s become pretty rare now and can b
     * Read his signals. If he lowers his head/ears or if he bares his teeth (usually when you’re really in his space), he’s telling you to back off
     * Keep food separate: have his own eating space and your own eating space (we have him “settle” on his dog bed while we eat dinner)
     * Separate him and guests. If you have company over, it’s generally best to have him elsewhere or muzzled
-    * Sparky will be more on edge if you enter his space when he was previously alone (if he was napping in the bedroom, etc). You can have him come over/do a trick to snap him out of it.
-    
-    Sparky should not be trusted with children or children around Sparky.`,
+    * Sparky will be more on edge if you enter his space when he was previously alone (if he was napping in the bedroom, etc). You can have him come over/do a trick to snap him out of it.`,
   label: "special-care",
   displayName: "Special Care",
 };

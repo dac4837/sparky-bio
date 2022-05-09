@@ -120,10 +120,11 @@ function InfoCard() {
       "Age: 9yo coming 9/8/22",
       "Breed: Havanese",
       "Size: Small, 16lbs",
+      "Gender: Male",
     ],
     [
-      "Gender: Male",
       "Location: Maine",
+      "Available for adoption: Mid June-July",
       "Families: Not good with children",
       "Other dogs: Good with dogs he knows",
       "Cats: No",
